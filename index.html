@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PiterJS image generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&amp;display=swap&amp;subset=cyrillic" id="web-font">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.css" />
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <div class="drawer">
+        <form action="">
+            <fieldset>
+                <legend>Convert colors</legend>
+                <fieldset>
+                    <legend>On original image:</legend>
+                    <div><b>Colors</b></div>
+                    <div>
+                        <label for="color-primary">Primary: </label>
+                        <input type="text" name="color-primary" id="color-primary" value="#F7DF1E" class="jscolor">
+                    </div>
+                    <div>
+                        <label for="color-secondary">Secondary: </label>
+                        <input type="text" name="color-secondary" id="color-secondary" value="#F7DF1E" class="jscolor">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>To generated image:</legend>
+                    <div><b>Colors</b></div>
+                    <div>
+                        <label for="color-primary">Primary: </label>
+                        <input type="text" name="color-primary" id="color-primary" value="#F7DF1E" class="jscolor">
+                    </div>
+                    <div>
+                        <label for="color-secondary">Secondary: </label>
+                        <input type="text" name="color-secondary" id="color-secondary" value="#F7DF1E" class="jscolor">
+                    </div>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Data:</legend>
+                <fieldset>
+                    <legend>Sizes:</legend>
+                    <div>
+                        <label for="predefined">Predefined:</label>
+                        <!-- https://amplifr.com/blog/ru/pictures/ -->
+                        <!-- http://tilda.education/articles-images-for-social -->
+                        <select name="predefined" id="predefined">
+                            <optgroup label="Universal">
+                                <option value="1024x512">Пост</option>
+                            </optgroup>
+                            <optgroup label="Facebook">
+                                <option value="1200x630">Картинка к внешним</option>
+                                <option value="1200x630">Картинка для поста</option>
+                                <option value="820x312">Обложка универсальная</option>
+                                <option value="851x315">Обложка десктоп</option>
+                                <option value="640x360">Обложка смартфон</option>
+                                <option value="180x180">Фото профиля</option>
+                            </optgroup>
+                            <optgroup label="VK">
+                                <option value="1024x512">Пост с картинкой</option>
+                                <option value="506x253">Пост ссылки</option>
+                                <option value="1590x400">Обложка страницы</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="width">Width:</label>
+                        <input type="number" id="width" id="width" value="1024">
+                    </div>
+                    <div>
+                        <label for="height">Height:</label>
+                        <input type="number" name="height" id="height" value="512">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Data:</legend>
+                    <div>
+                        <label for="number">Meetup №:</label>
+                        <input type="number" name="number" id="number" value="33">
+                    </div>
+                    <div>
+                        <label for="number">Address:</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label for="office">Company:</label>
+                        <input type="text" name="office" id="office" value="офис Wrike sdfds fsdf sdfsd fsdf">
+                    </div>
+                    <div>
+                        <label for="number">Date:</label>
+                        <input type="datetime-local" value="">
+                    </div>
+                </fieldset>
+            </fieldset>
+            <fieldset>
+                <legend>Speakers</legend>
+                <fieldset>
+                    <legend>1 speaker:</legend>
+                    <div>
+                        <label for="number">Report:</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label for="number">Fullname:</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label for="number">Time:</label>
+                        <input type="text" value="">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>2 speaker:</legend>
+                    <div>
+                        <label for="number">Report:</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label for="number">Fullname:</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label for="number">Time:</label>
+                        <input type="text" value="">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>3 speaker:</legend>
+                    <div>
+                        <label for="number">Report:</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label for="number">Fullname:</label>
+                        <input type="text" value="">
+                    </div>
+                    <div>
+                        <label for="number">Time:</label>
+                        <input type="text" value="">
+                    </div>
+                </fieldset>
+            </fieldset>
+        </form>
+    </div>
+    <main>
+        <output class="image" />
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <script type="module" src='./scripts/index.js'></script>
+</body>
+
+</html>
