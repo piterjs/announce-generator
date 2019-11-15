@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #f0f0f0;
+}
+
+.image {
+    /*padding: 10px;*/
+}
+
+.image svg {
+    max-width: 100%;
+}
+
+.drawer {
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #f0f0f0;
+}
+
+form {
+    position: relative;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+fieldset {
+  padding: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 4px 8px;
+    line-height: 1.2em;
+}
